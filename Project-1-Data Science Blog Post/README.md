@@ -4,16 +4,16 @@ This project is part of the Udacity Data Scientist Nanodegree. It analyzes the U
 Statistics (BFS)** — weekly counts of new business applications filed with the IRS, broken out by state — to answer five
 business questions about entrepreneurial activity in the United States between 2006 and 2026.
 
-📖 **Blog post (non-technical write-up):** *(https://medium.com/@fahad.reda/america-is-starting-businesses-like-never-before-heres-what-20-years-of-data-reveals-e6c9d5eaf035?postPublishedType=initial)*
+📖 **Blog post (non-technical write-up):** [America is Starting Businesses Like Never Before](https://medium.com/@fahad.reda/america-is-starting-businesses-like-never-before-heres-what-20-years-of-data-reveals-e6c9d5eaf035?postPublishedType=initial)
 
-## Motivation
+✨ ## Motivation
 
 New business applications are one of the earliest available signals of economic activity — available weekly, and well ahead
 of GDP, payrolls, or other lagging economic indicators. This project explores what over two decades of application data can
 tell us about long-run growth, the impact of COVID-19, regional differences across states, seasonality, and the changing
 "quality" of new business filings, and builds a simple model to predict weekly application volume.
 
-## Business Questions
+❇️ ## Business Questions
 
 1. How have national business applications trended between 2006 and 2026, and how did COVID-19 affect them?
 2. Which U.S. states lead in business formation — in absolute volume and in growth over the last decade?
@@ -23,7 +23,7 @@ tell us about long-run growth, the impact of COVID-19, regional differences acro
 5. Can we predict weekly, state-level business applications from year, week-of-year, and state — and which factor matters
    most?
 
-## Summary of Results
+💎## Summary of Results
 
 - Business applications grew slowly from 2006-2019, then jumped **~54% from 2019 to 2021** following the onset of COVID-19,
   and have stayed roughly double their pre-pandemic level ever since.
@@ -38,22 +38,23 @@ tell us about long-run growth, the impact of COVID-19, regional differences acro
 
 Full methodology, code, charts, and discussion are in the notebook.
 
-## Repository Contents
+📂## Repository Contents
 
 | File | Description |
 |---|---|
-| `US_Business_Formation_Analysis.ipynb` | Main Jupyter notebook containing the full analysis: data loading, cleaning, exploration, visualizations, and the predictive model, following the CRISP-DM process. |
+| `Pr1-US_Business_Formation_Analysis.HTML` | Same Jupyter file below, but this one is in HTML format for easy preview. |
+| `Pr1-US_Business_Formation_Analysis.ipynb` | Main Jupyter notebook containing the full analysis: data loading, cleaning, exploration, visualizations, and the predictive model, following the CRISP-DM process. |
 | `data/bfs_state_apps_weekly_nsa.csv` | Raw weekly business-application counts by U.S. state (2006-2026), not seasonally adjusted, from the U.S. Census Bureau. |
 | `data/date_table.csv` | Lookup table mapping each `(Year, Week)` pair to a calendar start/end date. |
 | `README.md` | This file. |
 
-## Libraries Used
+⚙️## Libraries Used
 
 - `pandas`, `numpy` — data loading, cleaning, and aggregation
 - `matplotlib` — visualization
 - `scikit-learn` — one-hot encoding, train/test split, `RandomForestRegressor`, and evaluation metrics
 
-## How to Run
+💻## How to Run
 
 1. Clone this repository.
 2. Install dependencies: `pip install pandas numpy matplotlib scikit-learn jupyter`
@@ -61,7 +62,7 @@ Full methodology, code, charts, and discussion are in the notebook.
 4. Run all cells (the notebook expects the two CSV files to be in a `data/` subfolder relative to the notebook, as laid out
    above).
 
-## Acknowledgements
+📌## Acknowledgements
 
 Data provided by the U.S. Census Bureau's [Business Formation Statistics program](https://www.census.gov/econ/bfs/index.html).
 This project was completed as the first project of the Udacity Data Scientist Nanodegree program.
